@@ -1,0 +1,195 @@
+/* ====================Start Google Fonts====================*/
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-ExtraLight.ttf);
+    font-weight: 200;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-SemiBold.ttf);
+    font-weight: 600;
+    font-display: swap;
+}
+
+/* ====================End Google Fonts====================*/
+/* ====================Start Global Style ====================*/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --grey-500: hsl(234, 12%, 34%);
+    --grey-400: hsl(212, 6%, 44%);
+    --white: hsl(0, 0%, 100%);
+    --font-size-25: 1.5625rem;
+}
+
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: .9375rem;
+    font-weight: 400;
+}
+
+img {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.25rem;
+    color: var(--grey-400);
+}
+
+.container {
+    width: 100%;
+    padding-inline: .75rem;
+}
+
+
+
+
+/* ====================End Global Style ====================*/
+
+
+/* ===========Start Style Header========================== */
+header {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: var(--font-size-25);
+    color: var(--grey-500);
+
+}
+
+header p:first-child {
+    color: var(--grey-400);
+    font-size: var(--font-size-25);
+}
+
+header p:last-child {
+    font-size: .8125rem;
+    max-width: 450px;
+    color: var(--grey-400);
+    text-align: center;
+    margin-top: .9375rem;
+}
+
+/* ===========End Style Header========================== */
+
+
+/* ===========Start Style Cards========================== */
+
+.cards .container {
+    display: grid;
+    grid-template-areas:
+        "supervisor"
+        "t-builder"
+        "karma"
+        "calculator"
+        ;
+    row-gap: 30px;
+    font-size: .8125rem;
+    color: var(--grey-500);
+    padding-inline: 25px;
+    padding-bottom: 6.25rem;
+}
+
+.card {
+    background-color: var(--white);
+    padding: 1.5625rem 1.875rem;
+    box-shadow: 0 1rem 2rem .5rem #dedede;
+}
+
+.card p {
+    max-width: 250px;
+}
+
+.container img {
+    margin-top: 1.875rem;
+    margin-left: auto;
+}
+
+.supervisor {
+    grid-area: supervisor;
+    align-self: center;
+    border-top: 5px solid var(--cyan);
+    border-top-left-radius: .3125rem;
+    border-top-right-radius: .3125rem;
+}
+
+.team-builder {
+    grid-area: t-builder;
+
+
+    border-top: 5px solid var(--red);
+    border-top-left-radius: .3125rem;
+    border-top-right-radius: .3125rem;
+}
+
+
+.karma {
+    grid-area: karma;
+
+    border-top: 5px solid var(--orange);
+    border-top-left-radius: .3125rem;
+    border-top-right-radius: .3125rem;
+}
+
+.calculator {
+    grid-area: calculator;
+    align-self: center;
+
+    border-top: 5px solid var(--blue);
+    border-top-left-radius: .3125rem;
+    border-top-right-radius: .3125rem;
+}
+
+/* ===========End Style Cards========================== */
+
+/* =====================Start Footer Style===================== */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    padding-block: 1.5625rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* =====================End Footer Style===================== */
