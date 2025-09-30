@@ -70,6 +70,7 @@ h2 {
 }
 
 .container {
+    max-width: 82.5rem;
     width: 100%;
     padding-inline: .75rem;
 }

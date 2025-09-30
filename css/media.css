@@ -1,18 +1,5 @@
-/* ================Screen small============ */
-@media screen and (width >=36rem) {
-    .container {
-        width: 33.75rem;
-        padding-inline: 0;
-        margin-inline: auto;
-    }
-}
-
 /* ================Screen medium============ */
 @media screen and (width >=48rem) {
-    .container {
-        width: 45rem;
-    }
-
     .cards .container {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
@@ -24,31 +11,12 @@
 
 /* ================Screen large============ */
 @media screen and (width >=62rem) {
-    .container {
-        width: 60rem;
-    }
-
     .cards .container {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
             "supervisor t-builder calculator"
             "supervisor  karma calculator";
     }
-
-
 }
 
-/* ================Screen X large============ */
-@media screen and (width >=80rem) {
-    .container {
-        width: 71.25rem;
-    }
 
-}
-
-/* ================Screen XX large============ */
-@media screen and (width >=90rem) {
-    .container {
-        width: 82.5rem;
-    }
-}
